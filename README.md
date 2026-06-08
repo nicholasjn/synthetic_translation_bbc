@@ -14,7 +14,7 @@ pip install googletrans tqdm ftfy
 ```
 
 
-## 2. Running translation generation
+## 2. Running Batak Toba <-> Indonesian/English translation generation
 
 Arguments --total for how many translations
 Arguments --id-ratio for ratio. Default is id:70% and en:30%
@@ -23,3 +23,12 @@ Arguments --id-ratio for ratio. Default is id:70% and en:30%
 python generate_googletrans_wiki.py --total 50000
 ```
 
+## 3. Running Indonesian/English <-> Batak Toba translation generation
+
+Arguments --total for how many translations.
+Arguments --id-ratio for ratio. Default is id:70% and en:30%
+Arguments --start-row for starting row of input sentence rows. This value should indicate success + fail of previous run, to ensure no duplicate input
+
+```bash
+python generate_googletrans.py --total 50000 --start-row 50197
+```
