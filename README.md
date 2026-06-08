@@ -16,7 +16,7 @@ pip install googletrans tqdm ftfy
 
 ## 2. Running Batak Toba <-> Indonesian/English translation generation
 
-Arguments --total for how many translations
+Arguments --total for how many translations.
 Arguments --id-ratio for ratio. Default is id:70% and en:30%
 
 ```bash
